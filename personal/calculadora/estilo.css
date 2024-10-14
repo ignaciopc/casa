@@ -1,0 +1,32 @@
+button{
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 50px;
+    width: 50px;
+    
+    background-color: aqua;
+}
+
+
+.calculadora{
+    margin-top: 18em;
+    margin-left:50em;
+    background-color: blue;
+    width: 200px;
+    padding: 10px;
+}
+
+#texto{
+    margin-top: 4px;
+    margin-left: 20%;
+    height: auto;
+    width: 100px;
+    background-color: white;
+    color: blueviolet;
+    text-align: center;
+
+}
+
+body{
+    background-color: brown;
+}

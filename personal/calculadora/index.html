@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <div class="calculadora">
+        <div id="texto">holaa</div>
+        <button id="1">1</button>
+        <button id="2">2</button>
+        <button id="3">3</button>
+        <button id="4">4</button>
+        <button id="mas">+</button>
+        <button id="menos">-</button>
+        <button id="por">*</button>
+        <button id="div">/</button>
+        <button id="=">=</button>
+    </div>
+
+</body>
+
+
+<script>
+    const boton1 = document.getElementById("1");
+    const boton2 = document.getElementById("2");
+    const boton3 = document.getElementById("3");
+    const boton4 = document.getElementById("4");
+    const botonmas = document.getElementById("mas");
+    const botonmenos = document.getElementById("menos");
+    const botonpor = document.getElementById("por");
+    const botondiv = document.getElementById("div");
+        const botonigual = document.getElementById("=");
+    const texto = document.getElementById("texto");
+
+
+    let m = "";
+
+    boton1.addEventListener('click', function () {
+        m += "1 ";
+        texto.innerHTML = m;
+    });
+    boton2.addEventListener('click', function () {
+        m += "2 ";
+        texto.innerHTML = m;
+    });
+    boton3.addEventListener('click', function () {
+        m += "3 ";
+        texto.innerHTML = m;
+    });
+    boton4.addEventListener('click', function () {
+        m += "4 ";
+        texto.innerHTML = m;
+    });
+    botonmas.addEventListener('click', function () {
+        m += "+ ";
+        texto.innerHTML = m;
+    });
+    botonpor.addEventListener('click', function () {
+        m += "* ";
+        texto.innerHTML = m;
+    });
+    botondiv.addEventListener('click', function () {
+        m += "/ ";
+        texto.innerHTML = m;
+    });
+    botonigual.addEventListener('click', function () {
+       
+        try {
+ 
+            
+            texto.innerHTML = m + '= ' + eval(m);
+            m = ''
+        } catch (error) {
+            texto.innerHTML = "No se puede";
+            m = "";
+
+        }
+
+
+    });
+
+
+</script>
+
+</html>

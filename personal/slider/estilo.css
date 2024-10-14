@@ -1,0 +1,19 @@
+body{
+    background-color: aqua;
+}
+
+.todo{
+margin-left: 48em;
+margin-top: 15em;
+background-color: brown;
+width: 400px;
+}
+
+.imagen{
+    margin-left: 10%;
+}
+
+.botones{
+    margin-left: 18%;
+
+}

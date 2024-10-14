@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <div class="todo">
+        <h1>LOS PUTOS MEJORES ANIMALES</h1>
+        <div class="imagen">
+            <img id="tres" src="" alt="Imagen" width="300" height="300px">
+            
+        </div>
+        <div class="botones">
+            <button id="miBoton">siguiente</button>
+            <button id="miBotona">atras</button>
+            <div id="uno">asdasd</div>
+        </div>
+        
+
+
+    </div>
+    
+
+</body>
+
+<script>
+    const boton = document.getElementById("miBoton");
+    const botona = document.getElementById("miBotona");
+
+    let fotos = ["./fotos/primero.webp", "./fotos/segundo.webp","./fotos/oso.webp"];
+    let n = 0;
+    let div = document.getElementById("uno");
+    let dov = document.getElementById("tres");
+    dov.src = fotos[n];
+
+    boton.addEventListener('click', function () {
+        n++;
+        if (n== fotos.length) {
+            n=0;
+        }
+        dov.src = fotos[n];
+        div.innerHTML = n;
+
+    })
+
+    botona.addEventListener('click',function () {
+        n--;
+        if (n== -1) {
+            n=fotos.length-1;
+        }
+        dov.src = fotos[n];    
+        div.innerHTML = n;
+})
+
+</script>
+
+</html>
+
